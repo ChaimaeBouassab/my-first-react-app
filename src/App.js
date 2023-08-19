@@ -4,10 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
+import { Card, Row, Col } from 'react-bootstrap';
+
 
 function App() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <>
+<Navbar expand="lg" className="bg-body-tertiary">
       <Container>
       
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -31,6 +34,45 @@ function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <Container className="mt-4">
+        <h1>React Bootstrap Example</h1>
+        <Row>
+          <Col>
+            <Card>
+              <Card.Body>
+                <Card.Title>Card 1</Card.Title>
+                <Card.Text>
+                  This is the content of Card 1.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Body>
+                <Card.Title>Card 2</Card.Title>
+                <Card.Text>
+                  This is the content of Card 2.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Body>
+                <Card.Title>Card 3</Card.Title>
+                <Card.Text>
+                  This is the content of Card 3.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+
+    </>
+    
+    
   );
 }
 
